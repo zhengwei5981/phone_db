@@ -66,7 +66,11 @@ PRIMARY KEY (id)
 
 #### 数据可视化
 下载[phone.db](https://raw.githubusercontent.com/lalala223/phone-db/master/phone_db/phone.db)文件，使用[sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser)查看
-
+--------------------------
+select b.province,b.city,b.area_code,a.number from phones a,regions b
+where a.region_id=b.id
+and type=3  --1是移动，2是联通，3是电信
+----------------------------
 #### 记录条数
 
 415284 (updated:2018年10月)
